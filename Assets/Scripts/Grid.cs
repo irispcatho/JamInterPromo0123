@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 
 public class Grid : MonoBehaviour
 {
+    [SerializeField] private Transform _ground;
     [SerializeField] private Transform _minPos;
     [SerializeField] private int _width;
     [SerializeField] private int _height;
@@ -30,7 +31,9 @@ public class Grid : MonoBehaviour
 
             Vector3 position = GetWorldPosition(_food[i]._gridPosition.x, _food[i]._gridPosition.y) + (Vector3)_food[i]._offset;
 
-            Instantiate(_food[i]._object, position, Quaternion.identity, transform);
+            GameObject obj = Instantiate(_food[i]._object, position, Quaternion.identity, transform);
+
+            _food[i].Fall(obj, _ground.position.y + 0.5f);
         }
     }
 
