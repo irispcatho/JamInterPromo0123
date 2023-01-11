@@ -7,18 +7,23 @@ public class FoodBonus : MonoBehaviour
 
     // Variables GD
     [Header("Variables")]
-    public int Points;
+    public GameplayVariable Gameplay;
 
     // Reference
     [Header("Reference")]
     public ScoreManager ScoreManager;
 
+    private void Awake()
+    {
+        ScoreManager = FindObjectOfType<ScoreManager>();
+        Destroy(gameObject, Gameplay.DestroyTime);
+    }
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            ScoreManager.AddScore(Points);
+            ScoreManager.AddScore(Gameplay.Points);
             Destroy(gameObject);
         }
 
