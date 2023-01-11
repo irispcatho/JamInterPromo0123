@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1443132596883653622}
   - component: {fileID: 1443132596883653621}
   - component: {fileID: 1443132596883653620}
+  - component: {fileID: 4412889813969369467}
   m_Layer: 0
   m_Name: FoodBonus
   m_TagString: Untagged
@@ -93,7 +94,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443132596883653619}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -110,5 +111,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79fb27519bb7ff4eab0c356dcb9400f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Points: 5
+  Gameplay: {fileID: 11400000, guid: 7ae7f9e04cfbb6840af6c7c215c0e4ed, type: 2}
   ScoreManager: {fileID: 0}
+--- !u!54 &4412889813969369467
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443132596883653619}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

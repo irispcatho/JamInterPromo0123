@@ -7,8 +7,7 @@ public class PlanchaCollider : MonoBehaviour
 {
     // Variables GD
     [Header("Variables")]
-    public float GaugeOnPlanchaSpeed;
-    public float GaugeSafeZoneSpeed;
+    public GameplayVariable Gameplay;
     private float CurrentGaugeFill;
     private bool IsColliding;
     private int UnitSetup = 10000;
@@ -24,10 +23,10 @@ public class PlanchaCollider : MonoBehaviour
 
         if (IsColliding)
         {
-            CurrentGaugeFill += GaugeOnPlanchaSpeed / UnitSetup;
+            CurrentGaugeFill += Gameplay.GaugeOnPlanchaSpeed / UnitSetup;
         } else
         {
-            CurrentGaugeFill -= GaugeSafeZoneSpeed / UnitSetup;
+            CurrentGaugeFill -= Gameplay.GaugeSafeZoneSpeed / UnitSetup;
         }
     }
 

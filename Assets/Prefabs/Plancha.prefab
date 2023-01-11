@@ -111,8 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f645aa75fe30e4a4c89b265215fa70b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GaugeOnPlanchaSpeed: 20
-  GaugeSafeZoneSpeed: 3
+  Gameplay: {fileID: 11400000, guid: 7ae7f9e04cfbb6840af6c7c215c0e4ed, type: 2}
   GaugeImage: {fileID: 0}
 --- !u!1 &360509178133094189
 GameObject:
