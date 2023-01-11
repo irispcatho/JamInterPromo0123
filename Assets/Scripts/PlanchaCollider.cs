@@ -34,7 +34,7 @@ public class PlanchaCollider : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag == "Plancha")
+        if (collision.gameObject.tag == "Player")
         {
             IsColliding = true;
         }
@@ -42,7 +42,7 @@ public class PlanchaCollider : MonoBehaviour
     }
     private void OnTriggerExit(Collider collision)
     {
-        if (collision.gameObject.tag == "Plancha")
+        if (collision.gameObject.tag == "Player")
         {
             IsColliding = false;
         }
