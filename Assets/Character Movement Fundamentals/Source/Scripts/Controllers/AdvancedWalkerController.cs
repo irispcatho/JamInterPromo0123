@@ -98,7 +98,7 @@ namespace CMF
 		}
 
 		private bool isSpriting = false;
-		private bool _canDoubleJump;
+		private bool _canDoubleJump = false;
 		void Update()
 		{
 			HandleJumpKeyInput();
@@ -138,10 +138,10 @@ namespace CMF
 
 			_mesh.right = Input.GetAxisRaw("Horizontal") == 1 ? -Vector3.right : Vector3.right; 
 			
-			if (currentControllerState == ControllerState.Grounded && !_canDoubleJump)
-			{
-				_canDoubleJump = true;
-			}
+			// if (currentControllerState == ControllerState.Grounded && !_canDoubleJump)
+			// {
+			// 	_canDoubleJump = true;
+			// }
 		}
 
         //Handle jump booleans for later use in FixedUpdate;
