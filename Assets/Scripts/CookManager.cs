@@ -11,10 +11,12 @@ using UnityEngine.Serialization;
 public class CookManager : MonoBehaviour
 {
     [Header("Cook Intervention")] 
-    [SerializeField] private float _timeBetweenAttack;
+    [SerializeField] private float _timeBetweenAttackFood;
+    [SerializeField] private float _timeBetweenAttackFork;
     [SerializeField] private Transform _cook;
     [SerializeField] private float _cookSpeed;
     [SerializeField] private float _cookWaitToAttack;
+    [SerializeField] private ForkIntervention ForkIntervention;
     private bool _cookIsReady;
     private CookState _currentState;
     private Vector3 _cookInitPos;
@@ -23,14 +25,26 @@ public class CookManager : MonoBehaviour
     private void Start()
     {
         _currentState = CookState.Neutral;
-        StartCoroutine(LaunchCookIntervention(10));
+        // 0 for Food - 1 for Fork
+        StartCoroutine(LaunchCookIntervention(10, 0));
+        StartCoroutine(LaunchCookIntervention(12, 1));
         _cookInitPos = _cook.position;
     }
 
-    private IEnumerator LaunchCookIntervention(float timer)
+    private IEnumerator LaunchCookIntervention(float timer, int attack)
     {
         yield return new WaitForSeconds(timer);
-        CookIntervention();
+        switch (attack)
+        {
+            case 0:
+                // Food
+                CookIntervention();
+                break;
+            case 1:
+                // Fork
+                CookForkIntervention();
+                break;
+        }   
     }
 
     private void CookIntervention()
@@ -81,7 +95,19 @@ public class CookManager : MonoBehaviour
     private void CookInit()
     {
         _currentState = CookState.Neutral;
-        StartCoroutine(LaunchCookIntervention(PatternManager.Instance._currentLevel._waitForCook));
+        StartCoroutine(LaunchCookIntervention(PatternManager.Instance._currentLevel._waitForCook, 0));
+    }
+
+    // Fork
+    private void CookForkIntervention()
+    {
+        ForkIntervention.ChooseForkIntervention();
+    }
+
+    private void Update()
+    {
+        if (FindObjectOfType<ForkIntervention>() == null)
+            StartCoroutine(LaunchCookIntervention(_timeBetweenAttackFork, 1));
     }
 }
 public enum CookState
@@ -92,3 +118,5 @@ public enum CookState
     Waiting,
     BackZ
 }
+
+
