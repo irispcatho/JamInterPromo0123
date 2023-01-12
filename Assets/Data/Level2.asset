@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   _patterns:
-  - {fileID: 11400000, guid: a0c8cb3cd98943a4abffe0f16cfa16fa, type: 2}
-  - {fileID: 11400000, guid: 5652191b5e17288448c81e3d5f0b832d, type: 2}
+  - {fileID: 11400000, guid: f418ed5ec8979c34982ae01252114a98, type: 2}
+  - {fileID: 11400000, guid: 5ce664072537e604687002a16d020d13, type: 2}
   _foodQuantityForNextPattern: 3
-  _foodQuantityForNextLevel: 2
+  _patternQuantityForNextLevel: 2
+  _waitForCook: 2

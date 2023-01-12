@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2544895110473371030}
   - component: {fileID: 2544895110473371031}
   - component: {fileID: 2544895110473371017}
+  - component: {fileID: 2544895110903975771}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -50,8 +51,6 @@ MonoBehaviour:
   _width: 8
   _height: 5
   _cellSize: 5
-  _timeBetweenIntervention: 6
-  _cook: {fileID: 0}
 --- !u!114 &2544895110473371017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,4 +65,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _levels:
   - {fileID: 11400000, guid: cb05f34aeb41ffc4f86d9e2a662229ed, type: 2}
-  _foodInGame: []
+  - {fileID: 11400000, guid: 93ae391516e4749429494cb7a435e77c, type: 2}
+  _currentLevel: {fileID: 0}
+--- !u!114 &2544895110903975771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544895110473371028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab66eb30fb372345b970219f94c8c1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ForkSpawnerPrefab: {fileID: 3175662730387782047, guid: ac956956ee37d444cb9e5651fd30c52f, type: 3}
+  ForkSpawnerInfos:
+  - ForkNumber: 1
+    ForkSpeed: 25
+    PositionList:
+    - {fileID: 0}
+    FeedbackDisappearTime: 0.48
+    ForkAppearTime: 0.12
+    ForksSpawnTime: 0.27
+  - ForkNumber: 2
+    ForkSpeed: 10
+    PositionList:
+    - {fileID: 0}
+    - {fileID: 0}
+    FeedbackDisappearTime: 0.48
+    ForkAppearTime: 0.12
+    ForksSpawnTime: 0.27

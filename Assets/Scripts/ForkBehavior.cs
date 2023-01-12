@@ -8,6 +8,7 @@ public class ForkBehavior : MonoBehaviour
     public float Speed;
     private int _destroyTime = 10;
     public ForkSpawner ForkSpawner;
+    public Death Death;
 
     private void Awake()
     {
@@ -18,7 +19,7 @@ public class ForkBehavior : MonoBehaviour
 
     private void Update()
     {
-        transform.position += transform.forward * Time.deltaTime * Speed;
+        transform.position += transform.up * Time.deltaTime * Speed;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -26,7 +27,7 @@ public class ForkBehavior : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             // Player Death
-            Debug.Log("Death");
+            Death.PlayerDeath();
         }
     }
 }

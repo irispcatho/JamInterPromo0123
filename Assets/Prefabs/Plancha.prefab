@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gameplay: {fileID: 11400000, guid: 7ae7f9e04cfbb6840af6c7c215c0e4ed, type: 2}
+  Death: {fileID: -823387237216756062, guid: 507cb799f6b28dd4bb83a3569f299886, type: 3}
   GaugeImage: {fileID: 0}
 --- !u!1 &360509178133094189
 GameObject:

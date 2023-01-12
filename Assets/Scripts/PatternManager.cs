@@ -58,11 +58,12 @@ public class PatternManager : MonoBehaviour
     {
         if (_foodInGame.Count <= _currentLevel._foodQuantityForNextPattern)
         {
-            StartCoroutine(SpawnNewPattern(15));
+            StartCoroutine(SpawnNewPattern(5));
         }
 
-        if (_patternsAlreadyDone >= _currentLevel._patternQuantityForNextLevel &&
-            _currentLevel.index <= _levels.Count - 1)
+        if (_foodInGame.Count <= _currentLevel._foodQuantityForNextPattern &&
+            _patternsAlreadyDone >= _currentLevel._patternQuantityForNextLevel &&
+            _currentLevel.index < _levels.Count - 1)
         {
             _currentLevel = _levels[_currentLevel.index + 1];
             _patternsAlreadyDone = 0;

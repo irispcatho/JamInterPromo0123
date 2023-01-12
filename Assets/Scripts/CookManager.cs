@@ -17,6 +17,7 @@ public class CookManager : MonoBehaviour
     [SerializeField] private float _cookSpeed;
     [SerializeField] private float _cookWaitToAttack;
     [SerializeField] private ForkIntervention ForkIntervention;
+    private bool _canSpawnFork;
     private bool _cookIsReady;
     private CookState _currentState;
     private Vector3 _cookInitPos;
@@ -102,12 +103,17 @@ public class CookManager : MonoBehaviour
     private void CookForkIntervention()
     {
         ForkIntervention.ChooseForkIntervention();
+        _canSpawnFork = true;
     }
 
     private void Update()
     {
-        if (FindObjectOfType<ForkIntervention>() == null)
+        if (_canSpawnFork)
+        {
+            _canSpawnFork = false;
             StartCoroutine(LaunchCookIntervention(_timeBetweenAttackFork, 1));
+        }
+            
     }
 }
 public enum CookState
