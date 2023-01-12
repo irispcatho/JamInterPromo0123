@@ -2,14 +2,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
+using UnityEngine.UI;
 
 
 
 public class Death : MonoBehaviour
 {
+    [SerializeField] private Image FadeImage;
+    [SerializeField] private Color ImageColor;
+    [SerializeField] private float FadeInSpeed;
+    [SerializeField] private float FadeOutSpeed;
+    public string TargetScene;
+
+
+    private void Start()
+    {
+        // Alpha 1
+        FadeImage.DOFade(1f, 0f);
+        FadeIn();
+        FadeImage.color = ImageColor;
+    }
 
     public void PlayerDeath()
     {
-        SceneManager.LoadScene("Menu");
+        GoToScene();
+        //FadeImage.DOFade(1f, FadeOutSpeed).OnComplete(GoToScene);
+    }
+
+    public void FadeIn()
+    {
+        FadeImage.DOFade(0f, FadeInSpeed);
+    }
+
+    public void GoToScene()
+    {
+        SceneManager.LoadScene(TargetScene);
     }
 }
