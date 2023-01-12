@@ -19,6 +19,10 @@ PrefabInstance:
       propertyPath: m_VersionIndex
       value: 851
       objectReference: {fileID: 0}
+    - target: {fileID: 3317160420203306118, guid: c23b703cbfdc350429e68e8520d8dde8, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3844529502209722474, guid: c23b703cbfdc350429e68e8520d8dde8, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -37,7 +41,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3844529502209722474, guid: c23b703cbfdc350429e68e8520d8dde8, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.3420201
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3844529502209722474, guid: c23b703cbfdc350429e68e8520d8dde8, type: 3}
       propertyPath: m_LocalRotation.x
@@ -45,11 +49,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3844529502209722474, guid: c23b703cbfdc350429e68e8520d8dde8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9396927
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3844529502209722474, guid: c23b703cbfdc350429e68e8520d8dde8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3844529502209722474, guid: c23b703cbfdc350429e68e8520d8dde8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -57,17 +61,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3844529502209722474, guid: c23b703cbfdc350429e68e8520d8dde8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 220
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3844529502209722474, guid: c23b703cbfdc350429e68e8520d8dde8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4798343320748320717, guid: c23b703cbfdc350429e68e8520d8dde8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7660445
+      objectReference: {fileID: 0}
+    - target: {fileID: 4798343320748320717, guid: c23b703cbfdc350429e68e8520d8dde8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6427876
+      objectReference: {fileID: 0}
+    - target: {fileID: 4798343320748320717, guid: c23b703cbfdc350429e68e8520d8dde8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4798343320748320717, guid: c23b703cbfdc350429e68e8520d8dde8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 5138747661245037861, guid: c23b703cbfdc350429e68e8520d8dde8, type: 3}
       propertyPath: m_Name
       value: Champignon_3
       objectReference: {fileID: 0}
     - target: {fileID: 6468659138864755489, guid: c23b703cbfdc350429e68e8520d8dde8, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8070924972167945578, guid: c23b703cbfdc350429e68e8520d8dde8, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}

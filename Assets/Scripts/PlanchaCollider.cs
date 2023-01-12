@@ -8,9 +8,9 @@ public class PlanchaCollider : MonoBehaviour
     // Variables GD
     [Header("Variables")]
     public GameplayVariable Gameplay;
-    private float CurrentGaugeFill;
-    private bool IsColliding;
-    private int UnitSetup = 10000;
+    private float _currentGaugeFill;
+    private bool _isColliding;
+    private int _unitSetup = 10000;
 
     // Text
     [Header("Text")]
@@ -18,15 +18,15 @@ public class PlanchaCollider : MonoBehaviour
 
     private void Update()
     {
-        CurrentGaugeFill = Mathf.Clamp(CurrentGaugeFill, 0, 1);
-        GaugeImage.fillAmount = CurrentGaugeFill;
+        _currentGaugeFill = Mathf.Clamp(_currentGaugeFill, 0, 1);
+        GaugeImage.fillAmount = _currentGaugeFill;
 
-        if (IsColliding)
+        if (_isColliding)
         {
-            CurrentGaugeFill += Gameplay.GaugeOnPlanchaSpeed / UnitSetup;
+            _currentGaugeFill += Gameplay.GaugeOnPlanchaSpeed / _unitSetup;
         } else
         {
-            CurrentGaugeFill -= Gameplay.GaugeSafeZoneSpeed / UnitSetup;
+            _currentGaugeFill -= Gameplay.GaugeSafeZoneSpeed / _unitSetup;
         }
     }
 
@@ -35,7 +35,7 @@ public class PlanchaCollider : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            IsColliding = true;
+            _isColliding = true;
         }
 
     }
@@ -43,7 +43,7 @@ public class PlanchaCollider : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            IsColliding = false;
+            _isColliding = false;
         }
 
     }
