@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Gameplay Variable
   m_EditorClassIdentifier: 
   GaugeOnPlanchaSpeed: 15
-  GaugeSafeZoneSpeed: 3
+  GaugeSafeZoneSpeed: 1
   Points: 5
   DestroyTime: 8
   SpawnTime: 10
