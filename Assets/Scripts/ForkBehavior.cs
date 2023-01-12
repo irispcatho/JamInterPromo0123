@@ -20,4 +20,13 @@ public class ForkBehavior : MonoBehaviour
     {
         transform.position += transform.forward * Time.deltaTime * Speed;
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            // Player Death
+            Debug.Log("Death");
+        }
+    }
 }

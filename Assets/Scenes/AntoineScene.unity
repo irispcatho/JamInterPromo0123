@@ -1836,12 +1836,20 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1496063763549671148, guid: db4b91b964d855847bb4051161c43a15, type: 3}
+      propertyPath: ForkNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1496063763549671148, guid: db4b91b964d855847bb4051161c43a15, type: 3}
       propertyPath: ForkSpawnTime
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1496063763549671148, guid: db4b91b964d855847bb4051161c43a15, type: 3}
       propertyPath: ForkAppearTime
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1496063763549671148, guid: db4b91b964d855847bb4051161c43a15, type: 3}
+      propertyPath: ForksSpawnTime
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1496063763549671148, guid: db4b91b964d855847bb4051161c43a15, type: 3}
       propertyPath: FeedBackToForkTime

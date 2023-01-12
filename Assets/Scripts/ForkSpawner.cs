@@ -11,6 +11,7 @@ public class ForkSpawner : MonoBehaviour
     public GameObject[] PositionList;
     public float FeedbackDisappearTime;
     public float ForkAppearTime;
+    public float ForksSpawnTime;
 
 
     [Header("References")]
@@ -20,7 +21,7 @@ public class ForkSpawner : MonoBehaviour
 
     // Time
     private float _time;
-    public float ForkSpawnTime;
+    
 
     private void Update()
     {
@@ -31,7 +32,7 @@ public class ForkSpawner : MonoBehaviour
     {
         _time += Time.deltaTime;
 
-        if (_time >= ForkSpawnTime)
+        if (_time >= ForksSpawnTime)
         {
             // Reset Timer
             _time = 0.0f;
@@ -61,7 +62,14 @@ public class ForkSpawner : MonoBehaviour
     {
         yield return new WaitForSeconds(ForkAppearTime);
 
+        // Update Fork Number
+        ForkNumber--;
+
         // Spawn Fork
         Spawn(ForkPrefab);
+
+        // Destroy Spawner if no Forks Remaining
+        if (ForkNumber <= 0)
+            Destroy(gameObject);
     }
 }
