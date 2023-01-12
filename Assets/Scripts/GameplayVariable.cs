@@ -16,7 +16,6 @@ public class GameplayVariable : ScriptableObject
     public int Points = 5;
     public int DestroyTime = 5;
 
-    [Header("Bonus Spawber")]
-    public Vector3[] PositionList;
+    [Header("Bonus Spawner")]
     public float SpawnTime = 1;
 }
