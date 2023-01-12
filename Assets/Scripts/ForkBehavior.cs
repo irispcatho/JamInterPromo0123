@@ -19,7 +19,7 @@ public class ForkBehavior : MonoBehaviour
 
     private void Update()
     {
-        transform.position += transform.forward * Time.deltaTime * Speed;
+        transform.position += transform.up * Time.deltaTime * Speed;
     }
 
     private void OnCollisionEnter(Collision collision)
