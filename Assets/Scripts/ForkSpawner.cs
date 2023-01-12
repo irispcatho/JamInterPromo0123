@@ -6,8 +6,8 @@ public class ForkSpawner : MonoBehaviour
 {
     // GD Variables
     [Header("Variables")]
-    public int ForkNumber = 1;
-    public float ForkSpeed = 1;
+    public int ForkNumber;
+    public float ForkSpeed;
     public GameObject[] PositionList;
     public float FeedbackDisappearTime;
     public float ForkAppearTime;
@@ -21,7 +21,6 @@ public class ForkSpawner : MonoBehaviour
 
     // Time
     private float _time;
-    
 
     private void Update()
     {
