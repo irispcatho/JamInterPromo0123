@@ -44,12 +44,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 243133dee553df04da4ca0dd25570826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ForkPrefab: {fileID: 1228386529713236257, guid: 00a6f213174fc7b4bb74f7b527eea00a, type: 3}
   ForkNumber: 1
-  ForkSpeed: 5
+  ForkSpeed: 1
   PositionList:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  FeedBackTransitionTime: 0
   CurrentSpawnerPosition: {fileID: 0}
-  ForkSpawnTime: 3
+  ForkPrefab: {fileID: 1228386529713236257, guid: 00a6f213174fc7b4bb74f7b527eea00a, type: 3}
+  FeedbackLine: {fileID: 4662682339142755307, guid: 772a9e365d4614c45a364c7df10f6a47, type: 3}
+  ForkSpawnTime: 0

@@ -4,25 +4,19 @@ using UnityEngine;
 
 public class ForkSpawner : MonoBehaviour
 {
-    //Variables du spawner : 
-    //-Direction dans laquelle lancer la fourchette
-
-    //Variable de l’intervention : 
-
-    //-Les différents spawner
-    //-La vitesse de la fourchette
-    //-Le temps pour passer de l’état armée à l’état tiré
-    //-Le nombre de fourchettes lancée
-
-    // Set Fork Speed to created instance
-
     // GD Variables
     [Header("Variables")]
-    public GameObject ForkPrefab;
     public int ForkNumber = 1;
     public float ForkSpeed = 1;
     public GameObject[] PositionList;
+    public float FeedbackDisappearTime;
+    public float ForkAppearTime;
+
+
+    [Header("References")]
     public GameObject CurrentSpawnerPosition;
+    public GameObject ForkPrefab;
+    public GameObject FeedbackLine;
 
     // Time
     private float _time;
@@ -46,13 +40,28 @@ public class ForkSpawner : MonoBehaviour
 
             CurrentSpawnerPosition = PositionList[Random.Range(0, PositionList.Length)];
 
-            // Spawn Fork
-            SpawnFork();
+            // Start Fork Spawn Process
+            Spawn(FeedbackLine);
+
+            // Wait Some Time and Spawn Fork
+            StartCoroutine(SpawnFork());
         }
     }
 
-    private void SpawnFork()
+    private void Spawn(GameObject _spawnedObject)
     {
-        Instantiate(ForkPrefab, CurrentSpawnerPosition.transform.position, CurrentSpawnerPosition.transform.rotation);
+        var spawnFeedback = Instantiate(_spawnedObject, CurrentSpawnerPosition.transform.position, CurrentSpawnerPosition.transform.rotation);
+
+        // If Spawned Object is not a Fork
+        if (_spawnedObject.GetComponent<ForkBehavior>() == null)
+            Destroy(spawnFeedback, FeedbackDisappearTime);
+    }
+
+    private IEnumerator SpawnFork()
+    {
+        yield return new WaitForSeconds(ForkAppearTime);
+
+        // Spawn Fork
+        Spawn(ForkPrefab);
     }
 }
