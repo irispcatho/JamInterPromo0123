@@ -24,16 +24,16 @@ MonoBehaviour:
   - _object: {fileID: 2787953571506638438, guid: 34c718d1f2857f64887b0bb64871448c, type: 3}
     _gridPosition: {x: 1, y: 2}
     _offset: {x: 0, y: 0}
-    _fallTime: 6
+    _fallTime: 4
   - _object: {fileID: 8647425016952283623, guid: 7ea28ccac20f7a548a23f41e1fdf578f, type: 3}
     _gridPosition: {x: 1, y: 3}
     _offset: {x: 0, y: 0}
-    _fallTime: 10
+    _fallTime: 6
   - _object: {fileID: 3446238679508556540, guid: 505a68dfb3795c740b91b73fcf3c4d2d, type: 3}
     _gridPosition: {x: 4, y: 2}
     _offset: {x: 0, y: 0}
-    _fallTime: 6
+    _fallTime: 4
   - _object: {fileID: 3557228389938192595, guid: e77970dd766acbc40ab911198c5d7546, type: 3}
     _gridPosition: {x: 4, y: 3}
     _offset: {x: 0, y: 0}
-    _fallTime: 10
+    _fallTime: 6

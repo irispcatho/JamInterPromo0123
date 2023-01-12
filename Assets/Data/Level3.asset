@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e2cc1392a4c48b4adac0fbae13f7e04, type: 3}
   m_Name: Level3
   m_EditorClassIdentifier: 
-  index: 1
+  index: 2
   _patterns:
-  - {fileID: 11400000, guid: f418ed5ec8979c34982ae01252114a98, type: 2}
-  - {fileID: 11400000, guid: 5ce664072537e604687002a16d020d13, type: 2}
-  _foodQuantityForNextPattern: 2
+  - {fileID: 11400000, guid: a058602d5ceb46842ac742639afa92e7, type: 2}
+  - {fileID: 11400000, guid: 0a0f26a1d91d7f64c9b97d17dc1ad0c7, type: 2}
+  - {fileID: 11400000, guid: e7e589a39f951b54aa3e22606beb70b3, type: 2}
+  - {fileID: 11400000, guid: 494685bae4276334d821f87317594707, type: 2}
+  - {fileID: 11400000, guid: 1d1fd0ef2e9aaf141abf8465d72fd7b8, type: 2}
+  - {fileID: 11400000, guid: bad36c68160b12540a6bbaec19f4752f, type: 2}
+  - {fileID: 11400000, guid: b01a1f03cc960174a8bcd7b4327776ea, type: 2}
+  _foodQuantityForNextPattern: 1
   _patternQuantityForNextLevel: 1000000000
-  _waitForCook: 2
+  _waitForCook: 0.25

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GaugeOnPlanchaSpeed: 15
   GaugeSafeZoneSpeed: 1
-  Points: 5
-  DestroyTime: 8
+  Points: 25
+  DestroyTime: 10
   SpawnTime: 10

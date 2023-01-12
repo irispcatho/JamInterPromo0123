@@ -24,7 +24,7 @@ MonoBehaviour:
   - _object: {fileID: 4633604360454033641, guid: 7521c8fbd0114ab4da620bc01f2940d8, type: 3}
     _gridPosition: {x: 4, y: 4}
     _offset: {x: 0, y: 0}
-    _fallTime: 8
+    _fallTime: 6
   - _object: {fileID: 3446238679508556540, guid: 505a68dfb3795c740b91b73fcf3c4d2d, type: 3}
     _gridPosition: {x: 4, y: 3}
     _offset: {x: 0, y: 0}
@@ -40,4 +40,4 @@ MonoBehaviour:
   - _object: {fileID: 3446238679508556540, guid: 505a68dfb3795c740b91b73fcf3c4d2d, type: 3}
     _gridPosition: {x: 4, y: 0}
     _offset: {x: 0, y: 0}
-    _fallTime: 9
+    _fallTime: 6

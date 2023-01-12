@@ -48,8 +48,8 @@ MonoBehaviour:
   - _object: {fileID: 3446238679508556540, guid: 505a68dfb3795c740b91b73fcf3c4d2d, type: 3}
     _gridPosition: {x: 2, y: 2}
     _offset: {x: 0, y: 0}
-    _fallTime: 12
+    _fallTime: 8
   - _object: {fileID: 3557228389938192595, guid: e77970dd766acbc40ab911198c5d7546, type: 3}
     _gridPosition: {x: 3, y: 2}
     _offset: {x: 0, y: 0}
-    _fallTime: 12
+    _fallTime: 8
