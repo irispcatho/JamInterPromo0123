@@ -32,14 +32,14 @@ public class BonusManager : MonoBehaviour
             _time = 0.0f;
 
             // Change CurrentPosition
-            //if (GameObject.FindObjectOfType<FoodBonus>() == null)
-            //{
-                _currentPosition = Gameplay.PositionList[Random.Range(0, Gameplay.PositionList.Length)];
-            //}
             
-
+            _currentPosition = Gameplay.PositionList[Random.Range(0, Gameplay.PositionList.Length)];
+           
             // Spawn Bonus
-            SpawnBonus();
+            if (GameObject.FindObjectOfType<FoodBonus>() == null)
+            {
+                SpawnBonus();
+            }
         }
     }
 
