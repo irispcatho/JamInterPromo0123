@@ -23,7 +23,7 @@ public class CookManager : MonoBehaviour
     private void Start()
     {
         _currentState = CookState.Neutral;
-        StartCoroutine(LaunchCookIntervention(6));
+        StartCoroutine(LaunchCookIntervention(10));
         _cookInitPos = _cook.position;
     }
 
@@ -50,7 +50,10 @@ public class CookManager : MonoBehaviour
         _cook.DOKill();
         _cook.DOMoveZ(endPos.z, distanceZ / _cookSpeed).OnComplete(CookWait);
 
+        Vector2Int foodValue = PatternManager.Instance._foodInGame.ElementAt(random).Value;
+        GridManager.Instance._grid[foodValue.x, foodValue.y] = null;
         PatternManager.Instance._foodInGame.Remove(foodKey);
+        PatternManager.Instance.UpdateOnCurrentGame();
     }
 
     private void CookWait()
@@ -78,7 +81,7 @@ public class CookManager : MonoBehaviour
     private void CookInit()
     {
         _currentState = CookState.Neutral;
-        StartCoroutine(LaunchCookIntervention(_timeBetweenAttack));
+        StartCoroutine(LaunchCookIntervention(PatternManager.Instance._currentLevel._waitForCook));
     }
 }
 public enum CookState

@@ -21,3 +21,15 @@ MonoBehaviour:
     _gridPosition: {x: 6, y: 4}
     _offset: {x: 0, y: 0}
     _fallTime: 3
+  - _object: {fileID: 706529727336108235, guid: 8d4e1e3405aa9c74e88281e33f877367, type: 3}
+    _gridPosition: {x: 6, y: 3}
+    _offset: {x: 0, y: 0}
+    _fallTime: 3
+  - _object: {fileID: 706529727336108235, guid: 8d4e1e3405aa9c74e88281e33f877367, type: 3}
+    _gridPosition: {x: 5, y: 4}
+    _offset: {x: 0, y: 0}
+    _fallTime: 3
+  - _object: {fileID: 706529727336108235, guid: 8d4e1e3405aa9c74e88281e33f877367, type: 3}
+    _gridPosition: {x: 6, y: 6}
+    _offset: {x: 0, y: 0}
+    _fallTime: 3
