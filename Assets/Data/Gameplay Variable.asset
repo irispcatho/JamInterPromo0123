@@ -12,11 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 849b524d8bc78344f82f4619188485c6, type: 3}
   m_Name: Gameplay Variable
   m_EditorClassIdentifier: 
-  GaugeOnPlanchaSpeed: 20
+  GaugeOnPlanchaSpeed: 15
   GaugeSafeZoneSpeed: 3
   Points: 5
-  DestroyTime: 6
-  SpawnTime: 7.11
-  ForkNumber: 1
-  ForkSpeed: 10
-  ForkSpawnTime: 1
+  DestroyTime: 8
+  SpawnTime: 10
