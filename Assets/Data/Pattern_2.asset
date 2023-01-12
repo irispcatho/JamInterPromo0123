@@ -16,32 +16,32 @@ MonoBehaviour:
   - _object: {fileID: 4633604360454033641, guid: 7521c8fbd0114ab4da620bc01f2940d8, type: 3}
     _gridPosition: {x: 1, y: 0}
     _offset: {x: 0, y: 0}
-    _fallTime: 8
+    _fallTime: 6
   - _object: {fileID: 8647425016952283623, guid: 7ea28ccac20f7a548a23f41e1fdf578f, type: 3}
     _gridPosition: {x: 3, y: 0}
     _offset: {x: 0, y: 0}
-    _fallTime: 16
+    _fallTime: 8
   - _object: {fileID: 3406417885384921310, guid: bab063049a0a24f46bcda086e34e14be, type: 3}
     _gridPosition: {x: 3, y: 1}
     _offset: {x: 0, y: 0}
-    _fallTime: 0
+    _fallTime: 1
   - _object: {fileID: 2787953571506638438, guid: 34c718d1f2857f64887b0bb64871448c, type: 3}
     _gridPosition: {x: 4, y: 1}
     _offset: {x: 0, y: 0}
-    _fallTime: 0
+    _fallTime: 3
   - _object: {fileID: 4633604360454033641, guid: 7521c8fbd0114ab4da620bc01f2940d8, type: 3}
     _gridPosition: {x: 2, y: 2}
     _offset: {x: 0, y: 0}
-    _fallTime: 0
+    _fallTime: 2
   - _object: {fileID: 5795770956361567923, guid: bc96d55217faac648bd3bfa914aa231f, type: 3}
     _gridPosition: {x: 4, y: 2}
     _offset: {x: 0, y: 0}
-    _fallTime: 0
+    _fallTime: 1
   - _object: {fileID: 3446238679508556540, guid: 505a68dfb3795c740b91b73fcf3c4d2d, type: 3}
     _gridPosition: {x: 1, y: 3}
     _offset: {x: 0, y: 0}
-    _fallTime: 10
+    _fallTime: 5
   - _object: {fileID: 8573932803237587745, guid: 59199f49fb4404849bca8a74d6e9224f, type: 3}
     _gridPosition: {x: 3, y: 3}
     _offset: {x: 0, y: 0}
-    _fallTime: 14
+    _fallTime: 7
