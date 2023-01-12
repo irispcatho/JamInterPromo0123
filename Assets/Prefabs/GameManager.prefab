@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2544895110473371031}
   - component: {fileID: 2544895110473371017}
   - component: {fileID: 2544895110903975771}
+  - component: {fileID: 1701991589027138369}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -96,3 +97,28 @@ MonoBehaviour:
     FeedbackDisappearTime: 0.48
     ForkAppearTime: 0.12
     ForksSpawnTime: 0.27
+--- !u!114 &1701991589027138369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544895110473371028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f18187704133474690a172d18404998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Music
+    clip: {fileID: 8300000, guid: 4e10c57c56669dd4389d9484aa2c31a4, type: 3}
+    volume: 0.606
+    pitch: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: Ambiance
+    clip: {fileID: 8300000, guid: 7ba577b44e9963546962cce628b8053e, type: 3}
+    volume: 0.434
+    pitch: 0
+    loop: 1
+    source: {fileID: 0}
