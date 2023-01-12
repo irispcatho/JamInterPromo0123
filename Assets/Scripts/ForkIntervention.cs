@@ -23,14 +23,6 @@ public class ForkIntervention : MonoBehaviour
         _createdSpawner.ForksSpawnTime = ForkSpawnerInfos[_randomSpawner].ForksSpawnTime;
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            ChooseForkIntervention();
-        }
-    }
-
     [System.Serializable]
     public struct ForkSpawnerInformations
     {
