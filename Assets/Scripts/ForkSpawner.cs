@@ -53,8 +53,11 @@ public class ForkSpawner : MonoBehaviour
         var spawnFeedback = Instantiate(_spawnedObject, CurrentSpawnerPosition.transform.position, CurrentSpawnerPosition.transform.rotation);
 
         // If Spawned Object is not a Fork
-        if (_spawnedObject.GetComponent<ForkBehavior>() == null)
+        if (_spawnedObject.GetComponent<ForkBehavior>() == null) {
+
+            spawnFeedback.transform.Rotate(-90,0,0);
             Destroy(spawnFeedback, FeedbackDisappearTime);
+        }
     }
 
     private IEnumerator SpawnFork()
