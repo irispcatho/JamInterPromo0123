@@ -16,6 +16,7 @@ MonoBehaviour:
   _patterns:
   - {fileID: 11400000, guid: e329f92487dc80b48bce08afa711be30, type: 2}
   - {fileID: 11400000, guid: 63719520dd77cf342b4fb42371f07dae, type: 2}
-  _foodQuantityForNextPattern: 3
-  _patternQuantityForNextLevel: 2
+  - {fileID: 11400000, guid: f47788d530b98f14d99ae6e9444c5d3c, type: 2}
+  _foodQuantityForNextPattern: 4
+  _patternQuantityForNextLevel: 5
   _waitForCook: 4

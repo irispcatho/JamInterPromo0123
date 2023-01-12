@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e2cc1392a4c48b4adac0fbae13f7e04, type: 3}
-  m_Name: Level2
+  m_Name: Level3
   m_EditorClassIdentifier: 
-  index: 0
+  index: 1
   _patterns:
   - {fileID: 11400000, guid: f418ed5ec8979c34982ae01252114a98, type: 2}
   - {fileID: 11400000, guid: 5ce664072537e604687002a16d020d13, type: 2}
-  _foodQuantityForNextPattern: 3
-  _patternQuantityForNextLevel: 2
+  _foodQuantityForNextPattern: 2
+  _patternQuantityForNextLevel: 1000000000
   _waitForCook: 2
