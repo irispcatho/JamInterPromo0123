@@ -1,12 +1,13 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
-using UnityEngine.UIElements;
+using Random = UnityEngine.Random;
+using DG.Tweening;
 
 public class GridManager : MonoBehaviour
 {
-    public Transform _ground;
+    [Header("Grid")] public Transform _ground;
     public Transform _minPos;
     public int _width;
     public int _height;
@@ -15,6 +16,7 @@ public class GridManager : MonoBehaviour
     public Food[,] _grid;
 
     private PatternManager _pm;
+    private float _timer;
 
     private void Awake()
     {

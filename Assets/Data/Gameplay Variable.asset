@@ -16,9 +16,7 @@ MonoBehaviour:
   GaugeSafeZoneSpeed: 3
   Points: 5
   DestroyTime: 6
-  PositionList:
-  - {x: 8.47, y: 7.98, z: 0}
-  - {x: 4.94, y: 7.85, z: 0}
-  - {x: 5, y: 20, z: 0}
-  - {x: -2, y: 26.3, z: 0}
   SpawnTime: 7.11
+  ForkNumber: 1
+  ForkSpeed: 10
+  ForkSpawnTime: 1

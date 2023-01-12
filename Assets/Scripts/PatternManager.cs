@@ -6,12 +6,15 @@ using Random = UnityEngine.Random;
 
 public class PatternManager : MonoBehaviour
 {
+    public static PatternManager Instance;
+    
     [SerializeField] private List<Level> _levels = new List<Level>();
-    private List<Food> _foodInGame = new List<Food>();
+    public Dictionary<GameObject, Vector2Int> _foodInGame = new Dictionary<GameObject, Vector2Int>();
     private GridManager _gm;
 
     private void Awake()
     {
+        Instance = this;
         _gm = gameObject.GetComponent<GridManager>();
     }
 
@@ -27,8 +30,7 @@ public class PatternManager : MonoBehaviour
             GameObject obj = Instantiate(food._object, position, Quaternion.identity, transform);
 
             food.Fall(obj, _gm._ground.position.y + 0.5f);
-            
-            _foodInGame.Add(food);
+            _foodInGame.Add(obj, food._gridPosition);
         }
     }
 }

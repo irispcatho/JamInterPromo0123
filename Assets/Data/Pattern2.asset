@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _foods:
   - _object: {fileID: 706529727336108235, guid: 8d4e1e3405aa9c74e88281e33f877367, type: 3}
-    _gridPosition: {x: 2, y: 2}
+    _gridPosition: {x: 5, y: 2}
     _offset: {x: 0, y: 0}
     _fallTime: 3
   - _object: {fileID: 706529727336108235, guid: 8d4e1e3405aa9c74e88281e33f877367, type: 3}
-    _gridPosition: {x: 4, y: 4}
+    _gridPosition: {x: 7, y: 4}
     _offset: {x: 0, y: 0}
     _fallTime: 2
   - _object: {fileID: 706529727336108235, guid: 8d4e1e3405aa9c74e88281e33f877367, type: 3}
