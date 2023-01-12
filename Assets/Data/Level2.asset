@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   _patterns:
-  - {fileID: 11400000, guid: f418ed5ec8979c34982ae01252114a98, type: 2}
-  - {fileID: 11400000, guid: 5ce664072537e604687002a16d020d13, type: 2}
-  _foodQuantityForNextPattern: 3
-  _patternQuantityForNextLevel: 2
-  _waitForCook: 2
+  - {fileID: 11400000, guid: 05e00b2f2bd4d8c45af63656589840a2, type: 2}
+  - {fileID: 11400000, guid: 731b1bcd5403de545a6fabb7bdbffe46, type: 2}
+  - {fileID: 11400000, guid: e86e64fdcae7c1d4ea4ec470d44eb703, type: 2}
+  - {fileID: 11400000, guid: c70f6b4c87ff55f42bbbbe11c6cfaf9c, type: 2}
+  - {fileID: 11400000, guid: 0a2714827f57dbd44be01ceb98e21f6f, type: 2}
+  _foodQuantityForNextPattern: 2
+  _patternQuantityForNextLevel: 10
+  _waitForCook: 0.5
