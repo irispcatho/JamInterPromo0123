@@ -7,26 +7,23 @@ using DG.Tweening;
 
 public class GridManager : MonoBehaviour
 {
+    public static GridManager Instance;
     [Header("Grid")] public Transform _ground;
     public Transform _minPos;
     public int _width;
     public int _height;
     public float _cellSize;
 
-    public Food[,] _grid;
+    public GameObject[,] _grid;
 
     private PatternManager _pm;
     private float _timer;
 
     private void Awake()
     {
+        Instance = this;
+        _grid = new GameObject[_width, _height];
         _pm = gameObject.GetComponent<PatternManager>();
-    }
-
-    private void Start()
-    {
-        _grid = new Food[_width, _height];
-        _pm.SpawnNewPattern(0);
     }
 
     public Vector3 GetWorldPosition(int xGrid, int yGrid)
