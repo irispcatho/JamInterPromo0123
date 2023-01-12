@@ -8,14 +8,17 @@ public class ForkBehavior : MonoBehaviour
     public float Speed;
     private int _destroyTime = 10;
     private int _unitCorrection = 100;
+    public ForkSpawner ForkSpawner;
+    private Vector3 direction;
 
-    private void Start()
+    private void Awake()
     {
+        ForkSpawner = FindObjectOfType<ForkSpawner>();
         Destroy(gameObject, _destroyTime);
     }
 
     private void Update()
     {
-        gameObject.transform.position += new Vector3(0, 0, Speed/_unitCorrection);
+        transform.position += transform.forward * Time.deltaTime * Speed;
     }
 }
