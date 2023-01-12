@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6945450991448815825}
   - component: {fileID: 6945450991448815824}
+  - component: {fileID: -823387237216756062}
   m_Layer: 0
   m_Name: ForkIntervention
   m_TagString: Untagged
@@ -63,6 +64,18 @@ MonoBehaviour:
     FeedbackDisappearTime: 0.48
     ForkAppearTime: 0.12
     ForksSpawnTime: 0.27
+--- !u!114 &-823387237216756062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6945450991448815830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e52fe4088bfb2d479c9b4ffc66c4bc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6945450990196562049
 PrefabInstance:
   m_ObjectHideFlags: 0

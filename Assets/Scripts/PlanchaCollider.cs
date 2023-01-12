@@ -11,6 +11,7 @@ public class PlanchaCollider : MonoBehaviour
     private float _currentGaugeFill;
     private bool _isColliding;
     private int _unitSetup = 10000;
+    public Death Death;
 
     // Text
     [Header("Text")]
@@ -27,6 +28,12 @@ public class PlanchaCollider : MonoBehaviour
         } else
         {
             _currentGaugeFill -= Gameplay.GaugeSafeZoneSpeed / _unitSetup;
+        }
+
+        if (_currentGaugeFill >= 1)
+        {
+            // Player Death
+            Death.PlayerDeath();
         }
     }
 
