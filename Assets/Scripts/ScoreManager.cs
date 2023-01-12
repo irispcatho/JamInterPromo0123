@@ -8,7 +8,7 @@ public class ScoreManager : MonoBehaviour
     // Variables GD
     [Header("Variables")]
     public int ScorePerSecond;
-    private int CurrentScore;
+    private int _currentScore;
 
     // Text
     [Header("Text")]
@@ -23,7 +23,7 @@ public class ScoreManager : MonoBehaviour
     private void Update()
     {
         // Display Current Score
-        ScoreText.text = "Score: " + CurrentScore.ToString();
+        ScoreText.text = "Score: " + _currentScore.ToString();
         Timer();
 
     }
@@ -37,12 +37,12 @@ public class ScoreManager : MonoBehaviour
             time = 0.0f;
 
             // Add Score Every Second
-            CurrentScore += ScorePerSecond;
+            _currentScore += ScorePerSecond;
         }
     }
 
     public void AddScore(int score)
     {
-        CurrentScore += score;
+        _currentScore += score;
     }
 }

@@ -6,10 +6,10 @@ public class BonusManager : MonoBehaviour
 {
     // Variables GD
     [Header("Variables")]
-    private Vector3 CurrentPosition;
+    private Vector3 _currentPosition;
 
     // Timer
-    private float time;
+    private float _time;
 
     // Reference
     public GameplayVariable Gameplay;
@@ -24,15 +24,19 @@ public class BonusManager : MonoBehaviour
 
     private void Timer()
     {
-        time += Time.deltaTime;
+        _time += Time.deltaTime;
 
-        if (time >= Gameplay.SpawnTime)
+        if (_time >= Gameplay.SpawnTime)
         {
             // Reset Timer
-            time = 0.0f;
+            _time = 0.0f;
 
             // Change CurrentPosition
-            CurrentPosition = Gameplay.PositionList[Random.Range(0, Gameplay.PositionList.Length)];
+            //if (GameObject.FindObjectOfType<FoodBonus>() == null)
+            //{
+                _currentPosition = Gameplay.PositionList[Random.Range(0, Gameplay.PositionList.Length)];
+            //}
+            
 
             // Spawn Bonus
             SpawnBonus();
@@ -41,6 +45,6 @@ public class BonusManager : MonoBehaviour
 
     private void SpawnBonus()
     {
-        Instantiate(Bonus, CurrentPosition, Quaternion.identity);
+        Instantiate(Bonus, _currentPosition, Quaternion.identity);
     }
 }
