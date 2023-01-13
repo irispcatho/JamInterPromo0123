@@ -533,7 +533,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 834998374}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: FadeOutCredits
+        m_MethodName: FadeOuCredits
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -866,14 +866,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playScene: GDScene
-  _creditsScene: 
+  _creditsScene: MenuCredits
   _settingsScene: 
   _scaleDuration: 0.2
   _scaleEffect: 1.15
   FadeImage: {fileID: 830322229}
   ImageColor: {r: 0, g: 0, b: 0, a: 0}
   FadeInSpeed: 1.5
-  FadeOutSpeed: 3
+  FadeOutSpeed: 1.5
 --- !u!4 &834998375
 Transform:
   m_ObjectHideFlags: 0
