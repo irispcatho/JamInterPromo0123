@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 2f0ea8032e552a640bf25603de392968
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Laguna Smile
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: bd5e2a3c2f24ee84586f9224d79ebb61, type: 3}
+  - {fileID: 12800000, guid: 48de35f78288e764d86aa6f2d4073e19, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
