@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89df6caa9bdefdf42979f9a6b7dcbcb3, type: 3}
-  m_Name: Pattern_1_Facile
+  m_Name: Pattern_0
   m_EditorClassIdentifier: 
   _foods:
   - _object: {fileID: 5795770956361567923, guid: bc96d55217faac648bd3bfa914aa231f, type: 3}
     _gridPosition: {x: 1, y: 2}
     _offset: {x: 0, y: 0}
-    _fallTime: 4
+    _fallTime: 0
   - _object: {fileID: 4633604360454033641, guid: 7521c8fbd0114ab4da620bc01f2940d8, type: 3}
     _gridPosition: {x: 2, y: 2}
     _offset: {x: 0, y: 0}
@@ -24,16 +24,16 @@ MonoBehaviour:
   - _object: {fileID: 3452655251353409965, guid: a1adf463e1a8b40499f3684afc06bd95, type: 3}
     _gridPosition: {x: 2, y: 1}
     _offset: {x: 0, y: 0}
-    _fallTime: 3
+    _fallTime: 0
   - _object: {fileID: 3452655251353409965, guid: a1adf463e1a8b40499f3684afc06bd95, type: 3}
     _gridPosition: {x: 3, y: 3}
     _offset: {x: 0, y: 0}
-    _fallTime: 3
+    _fallTime: 0
   - _object: {fileID: 1259506567073057774, guid: 67831aca977e2974daa63d229219e401, type: 3}
     _gridPosition: {x: 3, y: 2}
     _offset: {x: 0, y: 0}
-    _fallTime: 1
+    _fallTime: 0
   - _object: {fileID: 5795770956361567923, guid: bc96d55217faac648bd3bfa914aa231f, type: 3}
     _gridPosition: {x: 4, y: 2}
     _offset: {x: 0, y: 0}
-    _fallTime: 4
+    _fallTime: 0
