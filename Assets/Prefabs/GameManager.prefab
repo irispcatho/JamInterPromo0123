@@ -49,9 +49,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ground: {fileID: 0}
   _minPos: {fileID: 0}
-  _width: 8
+  _width: 6
   _height: 5
-  _cellSize: 5
+  _cellSize: 4.4
 --- !u!114 &2544895110473371017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,6 +67,7 @@ MonoBehaviour:
   _levels:
   - {fileID: 11400000, guid: cb05f34aeb41ffc4f86d9e2a662229ed, type: 2}
   - {fileID: 11400000, guid: 93ae391516e4749429494cb7a435e77c, type: 2}
+  - {fileID: 11400000, guid: 301d640401a5a1d4f942f3692b645a7a, type: 2}
   _currentLevel: {fileID: 0}
 --- !u!114 &2544895110903975771
 MonoBehaviour:
@@ -112,13 +113,25 @@ MonoBehaviour:
   sounds:
   - name: Music
     clip: {fileID: 8300000, guid: 4e10c57c56669dd4389d9484aa2c31a4, type: 3}
-    volume: 0.606
-    pitch: 0
+    volume: 0.305
+    pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: Ambiance
     clip: {fileID: 8300000, guid: 7ba577b44e9963546962cce628b8053e, type: 3}
-    volume: 0.434
-    pitch: 0
+    volume: 0.906
+    pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: Food
+    clip: {fileID: 8300000, guid: 1fa57f1731f0c3645bad515a5935fac0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Spatule
+    clip: {fileID: 8300000, guid: 7b85221abd635bd40aa02f736671adf3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
     source: {fileID: 0}

@@ -64,6 +64,8 @@ namespace CMF
 		[Tooltip("Whether to calculate and apply momentum relative to the controller's transform.")]
 		public bool useLocalMomentum = false;
 
+		private float _lastInput;
+
 		//Enum describing basic controller states; 
 		public enum ControllerState
 		{
@@ -136,7 +138,8 @@ namespace CMF
 				_animator.SetBool("isRun", false);
 			}
 
-			_mesh.right = Input.GetAxisRaw("Horizontal") == 1 ? -Vector3.right : Vector3.right; 
+			if (Input.GetAxisRaw("Horizontal") != 0) _lastInput = Input.GetAxisRaw("Horizontal");
+			_mesh.right = _lastInput == 1 ? Vector3.right : -Vector3.right; 
 			
 			// if (currentControllerState == ControllerState.Grounded && !_canDoubleJump)
 			// {

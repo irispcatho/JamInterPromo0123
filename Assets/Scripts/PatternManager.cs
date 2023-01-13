@@ -33,7 +33,6 @@ public class PatternManager : MonoBehaviour
         yield return new WaitForSeconds(seconds);
 
         int random = Random.Range(0, _levels[_currentLevel.index]._patterns.Count);
-        Debug.Log(random);
 
         for (int index = 0; index < _levels[_currentLevel.index]._patterns[random]._foods.Count; index++)
         {
