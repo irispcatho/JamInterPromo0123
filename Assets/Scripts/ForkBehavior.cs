@@ -9,6 +9,7 @@ public class ForkBehavior : MonoBehaviour
     private int _destroyTime = 10;
     public ForkSpawner ForkSpawner;
     public Death Death;
+    private bool IsPlayerKilled;
 
     private void Awake()
     {
@@ -27,7 +28,7 @@ public class ForkBehavior : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             // Player Death
-            Death.PlayerDeath();
+            Death.GoToScene();
         }
     }
 }
