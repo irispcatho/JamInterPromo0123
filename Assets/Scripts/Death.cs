@@ -26,8 +26,15 @@ public class Death : MonoBehaviour
 
     public void PlayerDeath()
     {
-        GoToScene();
-        //FadeImage.DOFade(1f, FadeOutSpeed).OnComplete(GoToScene);
+        var Player = GameObject.FindGameObjectWithTag("Player");
+        if (Player != null)
+        {
+            if (Player.activeInHierarchy) {
+                GoToScene();
+                //Player.SetActive(false);
+                
+            }
+        }
     }
 
     public void FadeIn()

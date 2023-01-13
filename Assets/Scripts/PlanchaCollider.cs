@@ -42,6 +42,7 @@ public class PlanchaCollider : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            AudioManager.Instance.PlaySound("Burn");
             _isColliding = true;
         }
 
@@ -50,6 +51,7 @@ public class PlanchaCollider : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            AudioManager.Instance.StopSound("Burn");
             _isColliding = false;
         }
 

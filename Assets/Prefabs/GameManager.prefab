@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 2544895110473371030}
   - component: {fileID: 2544895110473371031}
   - component: {fileID: 2544895110473371017}
-  - component: {fileID: 2544895110903975771}
   - component: {fileID: 1701991589027138369}
+  - component: {fileID: 8335887324606051739}
+  - component: {fileID: 8798474262232524707}
+  - component: {fileID: 3069470416095427266}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -65,39 +67,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _levels:
+  - {fileID: 11400000, guid: d61c5a6e2b49396419bfeec275a8ff94, type: 2}
   - {fileID: 11400000, guid: cb05f34aeb41ffc4f86d9e2a662229ed, type: 2}
   - {fileID: 11400000, guid: 93ae391516e4749429494cb7a435e77c, type: 2}
   - {fileID: 11400000, guid: 301d640401a5a1d4f942f3692b645a7a, type: 2}
   _currentLevel: {fileID: 0}
---- !u!114 &2544895110903975771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2544895110473371028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ab66eb30fb372345b970219f94c8c1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForkSpawnerPrefab: {fileID: 3175662730387782047, guid: ac956956ee37d444cb9e5651fd30c52f, type: 3}
-  ForkSpawnerInfos:
-  - ForkNumber: 1
-    ForkSpeed: 25
-    PositionList:
-    - {fileID: 0}
-    FeedbackDisappearTime: 0.48
-    ForkAppearTime: 0.12
-    ForksSpawnTime: 0.27
-  - ForkNumber: 2
-    ForkSpeed: 10
-    PositionList:
-    - {fileID: 0}
-    - {fileID: 0}
-    FeedbackDisappearTime: 0.48
-    ForkAppearTime: 0.12
-    ForksSpawnTime: 0.27
 --- !u!114 &1701991589027138369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,7 +87,7 @@ MonoBehaviour:
   sounds:
   - name: Music
     clip: {fileID: 8300000, guid: 4e10c57c56669dd4389d9484aa2c31a4, type: 3}
-    volume: 0.305
+    volume: 0.599
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -135,3 +109,74 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+--- !u!114 &8335887324606051739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544895110473371028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab66eb30fb372345b970219f94c8c1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ForkSpawnerPrefab: {fileID: 3175662730387782047, guid: ac956956ee37d444cb9e5651fd30c52f, type: 3}
+  ForkSpawnerInfos:
+  - ForkNumber: 1
+    ForkSpeed: 25
+    PositionList:
+    - {fileID: 0}
+    - {fileID: 0}
+    FeedbackDisappearTime: 3
+    ForkAppearTime: 3
+    ForksSpawnTime: 5
+  - ForkNumber: 2
+    ForkSpeed: 25
+    PositionList:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    FeedbackDisappearTime: 3
+    ForkAppearTime: 3
+    ForksSpawnTime: 5
+  - ForkNumber: 3
+    ForkSpeed: 25
+    PositionList:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    FeedbackDisappearTime: 3
+    ForkAppearTime: 3
+    ForksSpawnTime: 5
+--- !u!114 &8798474262232524707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544895110473371028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e52fe4088bfb2d479c9b4ffc66c4bc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeImage: {fileID: 0}
+  ImageColor: {r: 0, g: 0, b: 0, a: 0}
+  FadeInSpeed: 2
+  FadeOutSpeed: 3
+  TargetScene: Menu
+--- !u!114 &3069470416095427266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544895110473371028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3b588ce1feff941a667ee2ca15d9b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScorePerSecond: 1
+  ScoreText: {fileID: 0}
