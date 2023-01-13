@@ -104,6 +104,8 @@ namespace CMF
 		void Update()
 		{
 			HandleJumpKeyInput();
+			_animator.SetBool("Jumping", !IsGrounded());
+			_animator.SetBool("Running", Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0);
 
 			isSpriting = Input.GetKey(KeyCode.LeftShift);
 			
@@ -126,16 +128,6 @@ namespace CMF
 			if (currentControllerState != ControllerState.Falling && _animator.GetBool("isFall"))
 			{
 				_animator.SetBool("isFall", false);
-			}
-
-			if (mover.rig.velocity.magnitude > 0.1 && !_animator.GetBool("isRun"))
-			{
-				_animator.SetBool("isRun", true);
-			}
-
-			if (mover.rig.velocity.magnitude <= 0.1 && _animator.GetBool("isRun"))
-			{
-				_animator.SetBool("isRun", false);
 			}
 
 			if (Input.GetAxisRaw("Horizontal") != 0) _lastInput = Input.GetAxisRaw("Horizontal");
@@ -511,7 +503,6 @@ namespace CMF
 		//This function is called when the player has initiated a jump;
 		void OnJumpStart()
 		{
-			_animator.SetTrigger("isJump");
 			
 			//If local momentum is used, transform momentum into world coordinates first;
 			if(useLocalMomentum)
