@@ -140,8 +140,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.63620543
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.25, z: 0}
 --- !u!1 &7268116734068693263
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,7 +185,7 @@ Animator:
   m_GameObject: {fileID: 7268116734068693263}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8e6d3e8197a306243b0ace40bed0257b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

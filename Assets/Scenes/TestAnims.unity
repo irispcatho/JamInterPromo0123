@@ -495,14 +495,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4942454462403562562, guid: 00db315b331a02f4bbd7f0d2ee44fcb7, type: 3}
-      propertyPath: m_Radius
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 4942454462403562562, guid: 00db315b331a02f4bbd7f0d2ee44fcb7, type: 3}
-      propertyPath: m_Center.y
-      value: 0.25
-      objectReference: {fileID: 0}
     - target: {fileID: 7268116733416320805, guid: 00db315b331a02f4bbd7f0d2ee44fcb7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -551,10 +543,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7268116734068693257, guid: 00db315b331a02f4bbd7f0d2ee44fcb7, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 8e6d3e8197a306243b0ace40bed0257b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00db315b331a02f4bbd7f0d2ee44fcb7, type: 3}
 --- !u!1 &1609308867
