@@ -16,6 +16,8 @@ namespace CMF
 		protected CeilingDetector ceilingDetector;
 		public Animator _animator;
 		public Transform _mesh;
+		public Animator _smokeAnimator;
+		public GameObject _smoke;
 		
         //Jump key variables;
         bool jumpInputIsLocked = false;

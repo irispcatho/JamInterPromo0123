@@ -159,7 +159,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: c4f1d53c383c05c48b8aaa10f7ca3e0c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -389,15 +389,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7268116733416320861, guid: 00db315b331a02f4bbd7f0d2ee44fcb7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.40917587
+      value: -1.04
       objectReference: {fileID: 0}
     - target: {fileID: 7268116733416320861, guid: 00db315b331a02f4bbd7f0d2ee44fcb7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0999248
+      value: 2.69
       objectReference: {fileID: 0}
     - target: {fileID: 7268116733416320861, guid: 00db315b331a02f4bbd7f0d2ee44fcb7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.5427184
+      value: -0.83
       objectReference: {fileID: 0}
     - target: {fileID: 7268116733416320861, guid: 00db315b331a02f4bbd7f0d2ee44fcb7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -427,8 +427,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7268116734068693258, guid: 00db315b331a02f4bbd7f0d2ee44fcb7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8627642372231977158, guid: 00db315b331a02f4bbd7f0d2ee44fcb7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00db315b331a02f4bbd7f0d2ee44fcb7, type: 3}
+--- !u!1 &5975944741476489653 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7268116733416320805, guid: 00db315b331a02f4bbd7f0d2ee44fcb7, type: 3}
+  m_PrefabInstance: {fileID: 3905566171990849168}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &811520324
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5975944741476489653}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.5
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.25, z: 0}
 --- !u!4 &5975944741476489677 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7268116733416320861, guid: 00db315b331a02f4bbd7f0d2ee44fcb7, type: 3}
@@ -709,7 +736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5309510915212359928, guid: 46cf5b811f642cf4b9afdc83014203d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.8299248
+      value: 1.11
       objectReference: {fileID: 0}
     - target: {fileID: 5309510915212359928, guid: 46cf5b811f642cf4b9afdc83014203d0, type: 3}
       propertyPath: m_LocalPosition.z

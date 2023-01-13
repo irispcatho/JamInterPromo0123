@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using CMF;
+using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -40,17 +42,23 @@ public class PlanchaCollider : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag == "Player")
+        AdvancedWalkerController player = collision.GetComponent<AdvancedWalkerController>();
+        if (player != null)
         {
             _isColliding = true;
+            player._smoke.SetActive(true);
+            player._smokeAnimator.SetBool("Burning", true);
         }
 
     }
     private void OnTriggerExit(Collider collision)
     {
-        if (collision.gameObject.tag == "Player")
+        AdvancedWalkerController player = collision.GetComponent<AdvancedWalkerController>();
+        if (player != null)
         {
             _isColliding = false;
+            player._smoke.SetActive(false);
+            player._smokeAnimator.SetBool("Burning", false);
         }
 
     }
