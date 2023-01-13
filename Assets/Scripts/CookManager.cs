@@ -73,6 +73,7 @@ public class CookManager : MonoBehaviour
 
     private void CookWait()
     {
+        AudioManager.Instance.PlaySound("Spatule");
         _currentState = CookState.Waiting;
         StartCoroutine((CookWaitCoroutine()));
     }

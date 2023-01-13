@@ -14,6 +14,12 @@ public struct Food
 
     public void Fall(GameObject obj, float yPos)
     {
-        obj.transform.DOMoveY(yPos, _fallTime);
+        obj.transform.DOMoveY(yPos, _fallTime).OnComplete(SoundOn);
+    }
+
+    private void SoundOn()
+    {
+        Debug.Log("Sound");
+        AudioManager.Instance.PlaySound("Food");
     }
 }
