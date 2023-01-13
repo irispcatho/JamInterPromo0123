@@ -1047,7 +1047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45741aa17621e5e419b1a59fef83a07e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playScene: GDScene
+  _playScene: EmmaScene
   _creditsScene: MenuCredits
   _settingsScene: 
   _scaleDuration: 0.2

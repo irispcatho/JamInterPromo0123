@@ -14,6 +14,7 @@ public class Death : MonoBehaviour
     [SerializeField] private float FadeInSpeed;
     [SerializeField] private float FadeOutSpeed;
     public string TargetScene;
+    private bool IsDead = false;
 
 
     private void Start()
@@ -24,15 +25,25 @@ public class Death : MonoBehaviour
         FadeImage.color = ImageColor;
     }
 
+    private void Update()
+    {
+        if (IsDead)
+            FadeImage.DOFade(1f, FadeInSpeed).OnComplete(GoToScene);
+
+    }
+
     public void PlayerDeath()
     {
         var Player = GameObject.FindGameObjectWithTag("Player");
+        var PlayerShadow = FindObjectOfType<Shadow>();
+
         if (Player != null)
         {
             if (Player.activeInHierarchy) {
-                GoToScene();
-                //Player.SetActive(false);
-                
+                //GoToScene();
+                Player.SetActive(false);
+                PlayerShadow.gameObject.SetActive(false);
+                IsDead = true;
             }
         }
     }
