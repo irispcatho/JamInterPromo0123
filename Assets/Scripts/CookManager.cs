@@ -27,8 +27,8 @@ public class CookManager : MonoBehaviour
     {
         _currentState = CookState.Neutral;
         // 0 for Food - 1 for Fork
-        StartCoroutine(LaunchCookIntervention(10, 0));
-        StartCoroutine(LaunchCookIntervention(12, 1));
+        StartCoroutine(LaunchCookIntervention(5, 0));
+        StartCoroutine(LaunchCookIntervention(7, 1));
         _cookInitPos = _cook.position;
     }
 

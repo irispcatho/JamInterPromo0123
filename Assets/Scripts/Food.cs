@@ -19,7 +19,6 @@ public struct Food
 
     private void SoundOn()
     {
-        Debug.Log("Sound");
         AudioManager.Instance.PlaySound("Food");
     }
 }
