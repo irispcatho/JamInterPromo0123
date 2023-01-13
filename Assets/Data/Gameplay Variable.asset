@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 849b524d8bc78344f82f4619188485c6, type: 3}
   m_Name: Gameplay Variable
   m_EditorClassIdentifier: 
-  GaugeOnPlanchaSpeed: 10
+  GaugeOnPlanchaSpeed: 50
   GaugeSafeZoneSpeed: 0.5
   Points: 25
   DestroyTime: 10
