@@ -23,7 +23,7 @@ public class ScoreManager : MonoBehaviour
     private void Update()
     {
         // Display Current Score
-        ScoreText.text = "Score: " + _currentScore.ToString();
+        ScoreText.text = _currentScore.ToString();
         Timer();
 
     }
