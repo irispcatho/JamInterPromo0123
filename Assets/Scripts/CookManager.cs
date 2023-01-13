@@ -88,10 +88,15 @@ public class CookManager : MonoBehaviour
     {
         _currentState = CookState.BackZ;
         
-        Destroy(_foodToDestroy);
         float distance = Vector3.Distance(_cook.position, _cookInitPos);
         _cook.DOKill();
         _cook.DOMoveZ(_cookInitPos.z, distance / _cookSpeed).OnComplete(CookInit);
+        _foodToDestroy.transform.DOMoveZ(_cookInitPos.z, distance / _cookSpeed).OnComplete(DestroyFood);
+    }
+
+    private void DestroyFood()
+    {
+        Destroy(_foodToDestroy);
     }
 
     private void CookInit()
