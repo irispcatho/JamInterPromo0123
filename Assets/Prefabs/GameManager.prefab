@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8335887324606051739}
   - component: {fileID: 8798474262232524707}
   - component: {fileID: 3069470416095427266}
+  - component: {fileID: 8637865355947737800}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -180,3 +181,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScorePerSecond: 1
   ScoreText: {fileID: 0}
+--- !u!114 &8637865355947737800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544895110473371028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbaf826aaf36d6443a262da0ea2eb7e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PositionList: []
+  Gameplay: {fileID: 11400000, guid: 7ae7f9e04cfbb6840af6c7c215c0e4ed, type: 2}
+  Bonus: {fileID: 1443132596883653620, guid: bd70a0cdbd0c3f848add9867c8bead68, type: 3}
